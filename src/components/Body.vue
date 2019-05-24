@@ -1,19 +1,19 @@
 <template>
   <div class="paxo">
     <div class="paxos_box">
-      <img src="../../assets/images/images/paxos.png" alt>
+      <img src="../assets/images/paxos.png" alt>
       <div class="paxos_desc">{{$t('paxo_.banner_desc')}}</div>
     </div>
     <div class="features">
       <div class="title">{{$t('paxo_.features_title')}}</div>
       <div class="item_box">
         <div class="item">
-          <img src="../../assets/images/images/feature1.png" alt>
+          <img src="../assets/images/feature1.png" alt>
           <div class="tips">{{$t('paxo_.features_trans')}}</div>
           <div class="desc">{{$t('paxo_.features_trans_d')}}</div>
         </div>
         <div class="item">
-          <img src="../../assets/images/images/feature2.png" alt>
+          <img src="../assets/images/feature2.png" alt>
           <div class="tips">{{$t('paxo_.features_month')}}</div>
           <div class="desc">{{$t('paxo_.features_month_d')}}</div>
         </div>
@@ -235,8 +235,9 @@ export default {
 }
 .touch_us {
   width: 100%;
-  max-width: 354px;
-  margin: 80px auto;
+  /* max-width: 370px; */
+  text-align: center;
+  margin: 70px auto;
   font-size: 16px;
   font-family: NunitoSans-Regular;
   font-weight: 400;
@@ -248,6 +249,7 @@ export default {
   text-decoration: underline;
 }
 .get_paxos {
+  display: none;
   margin-top: 40px;
   /* height: 158px; */
   height: 108px;
