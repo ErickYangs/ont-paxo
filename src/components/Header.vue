@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <div class="logo"></div>
+    <div class="logo" @click="toIndex()"></div>
     <div class="select">
       <el-select
         v-model="$i18n.locale"
@@ -37,8 +37,13 @@ export default {
   },
   methods: {
     handlechange(val) {
+      // console.log(this.$i18n.locale)
       this.$i18n.locale = val
       LangStorage.setLang(this.$i18n.locale)
+      window.location.reload()
+    },
+    toIndex() {
+      window.location.href = 'https://ont.io/'
     }
   },
 }
@@ -57,6 +62,10 @@ export default {
     background: url(../assets/images/ont_logo.png) center center;
     background-size: cover;
     float: left;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
   }
   .select {
     float: right;
@@ -69,6 +78,9 @@ export default {
         .el-input__inner {
           border: 1px solid #469fdb;
           color: #469fdb;
+          &:hover {
+            opacity: 0.7;
+          }
         }
         .el-select__caret {
           color: #469fdb;

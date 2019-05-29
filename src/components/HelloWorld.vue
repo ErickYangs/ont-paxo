@@ -100,7 +100,7 @@ export default {
   max-width: 624px;
   /* height: 66px; */
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(2, 16, 28, 1);
   line-height: 22px;
@@ -141,7 +141,7 @@ export default {
   text-align: center;
   height: 32px;
   font-size: 24px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
   line-height: 32px;
@@ -151,7 +151,7 @@ export default {
   margin: 0 auto;
   padding: 0 10%;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(74, 74, 74, 1);
   line-height: 22px;
@@ -187,7 +187,7 @@ export default {
 .reward .reward_box .left ul li .hex {
   height: 24px;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(155, 155, 155, 1);
   line-height: 24px;
@@ -213,7 +213,7 @@ export default {
   /* width:42px; */
   height: 48px;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(2, 16, 28, 1);
   line-height: 48px;
@@ -238,7 +238,7 @@ export default {
   max-width: 354px;
   margin: 80px auto;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(155, 155, 155, 1);
   line-height: 22px;
@@ -271,7 +271,7 @@ export default {
   width: 172px;
   height: 22px;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 22px;

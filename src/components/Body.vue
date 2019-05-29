@@ -44,22 +44,31 @@
               <div class="hex">{{$t('paxo_.reward_l_9')}}</div>
               <p class="source">{{$t('paxo_.reward_l_10')}}</p>
             </li>
+            <li>
+              <div class="hex">
+                <a href="https://ontrade.com/" target="_blank">{{$t('paxo_.reward_l_11')}}</a>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="right">
           <div class="line_box">
-            <p>
-              <i>{{$t('paxo_.reward_r_1')}}</i>
-              <span>{{$t('paxo_.reward_r_2')}}</span>
-            </p>
-            <p class="center">
-              <i>{{$t('paxo_.reward_r_3')}}</i>
-              <span>{{$t('paxo_.reward_r_4')}}</span>
-            </p>
-            <p>
-              <i>{{$t('paxo_.reward_r_5')}}</i>
-              <span>{{$t('paxo_.reward_r_6')}}</span>
-            </p>
+            <div class="pro_title">{{$t('paxo_.reward_r_0')}}</div>
+            <div class="line">
+              <p>
+                <i>{{$t('paxo_.reward_r_1')}}</i>
+                <span>{{$t('paxo_.reward_r_2')}}</span>
+              </p>
+              <p class="center">
+                <i>{{$t('paxo_.reward_r_3')}}</i>
+                <span>{{$t('paxo_.reward_r_4')}}</span>
+              </p>
+              <p>
+                <i>{{$t('paxo_.reward_r_5')}}</i>
+                <span>{{$t('paxo_.reward_r_6')}}</span>
+              </p>
+            </div>
+            <!-- <div class="look_here">{{$t('paxo_.reward_r_7')}} <a href="#" target="_blank">{{$t('paxo_.reward_r_8')}}</a></div> -->
           </div>
         </div>
       </div>
@@ -68,8 +77,10 @@
       <p>{{$t('paxo_.touch1')}}</p>
       <p>
         {{$t('paxo_.touch2')}}
-        <span>{{$t('paxo_.touch3')}}</span>
+        <!-- <span>{{$t('paxo_.touch3')}}</span> -->
+        <a href=mailto:pax@ont.io>{{$t('paxo_.touch3')}}</a>
       </p>
+      <!-- <a href=mailto:sample@163.com>send email</a> -->
     </div>
     <div class="get_paxos">
       <p>{{$t('paxo_.get')}}</p>
@@ -100,7 +111,7 @@ export default {
   max-width: 624px;
   /* height: 66px; */
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(2, 16, 28, 1);
   line-height: 22px;
@@ -141,7 +152,7 @@ export default {
   text-align: center;
   height: 32px;
   font-size: 24px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
   line-height: 32px;
@@ -151,7 +162,7 @@ export default {
   margin: 0 auto;
   padding: 0 10%;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(74, 74, 74, 1);
   line-height: 22px;
@@ -187,11 +198,24 @@ export default {
 .reward .reward_box .left ul li .hex {
   height: 24px;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(155, 155, 155, 1);
   line-height: 24px;
   margin-bottom: 8px;
+}
+.reward .reward_box .left ul li .hex a {
+  display: block;
+  height: 24px;
+  font-size: 16px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(7, 107, 223, 1);
+  line-height: 24px;
+  text-decoration: underline;
+}
+.reward .reward_box .left ul li .hex a:hover {
+  opacity: 0.7;
 }
 .reward .reward_box .left ul li .source {
   font-size: 16px;
@@ -205,15 +229,42 @@ export default {
   width: 336px;
   /* height: 144px; */
   border-radius: 2px;
-  border: 1px solid rgba(183, 200, 206, 1);
   text-align: left;
   margin-left: 110px;
+}
+.reward .reward_box .right .line_box .pro_title {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  color: rgba(2, 16, 28, 1);
+  line-height: 22px;
+  padding-bottom: 12px;
+}
+.reward .reward_box .right .line_box .look_here {
+  margin-top: 12px;
+  height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(155, 155, 155, 1);
+  line-height: 22px;
+}
+.reward .reward_box .right .line_box .look_here a {
+  color: #076bdf;
+  text-decoration: underline;
+}
+.reward .reward_box .right .line_box .look_here a:hover {
+  opacity: 0.7;
+}
+.reward .reward_box .right .line_box .line {
+  border: 1px solid rgba(183, 200, 206, 1);
 }
 .reward .reward_box .right .line_box p {
   /* width:42px; */
   height: 48px;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(2, 16, 28, 1);
   line-height: 48px;
@@ -239,14 +290,17 @@ export default {
   text-align: center;
   margin: 70px auto;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(155, 155, 155, 1);
   line-height: 22px;
 }
-.touch_us span {
+.touch_us a {
   color: #076bdf;
   text-decoration: underline;
+}
+.touch_us a:hover {
+  opacity: 0.7;
 }
 .get_paxos {
   display: none;
@@ -273,7 +327,7 @@ export default {
   width: 172px;
   height: 22px;
   font-size: 16px;
-  font-family: NunitoSans-Regular;
+  /* font-family: NunitoSans-Regular; */
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   line-height: 22px;

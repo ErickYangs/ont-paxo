@@ -116,6 +116,7 @@ export default {
     handlechange(val) {
       this.$i18n.locale = val
       LangStorage.setLang(this.$i18n.locale)
+      window.location.reload()
     }
   },
 }
@@ -125,7 +126,7 @@ export default {
 .foot_bg {
   width: 100%;
   padding-top: 40px;
-  background: rgba(238,244,247,1);
+  background: rgba(238, 244, 247, 1);
   // background: red;
 }
 #footer {
@@ -140,7 +141,7 @@ export default {
     height: 22px;
     line-height: 22px;
     font-size: 16px;
-    font-family: NunitoSans-Regular;
+    // font-family: NunitoSans-Regular;
     font-weight: 400;
     color: rgba(2, 16, 28, 1);
     margin-bottom: 24px;
@@ -159,7 +160,7 @@ export default {
       background: url(../assets/images/clg.png) center center;
       background-size: 16px;
       // margin: 6px 10px 0;
-      margin:0 10px;
+      margin: 0 10px;
     }
   }
 
@@ -180,10 +181,13 @@ export default {
           a {
             height: 16px;
             font-size: 12px;
-            font-family: NunitoSans-Regular;
+            // font-family: NunitoSans-Regular;
             font-weight: 400;
             color: rgba(89, 89, 89, 1);
             line-height: 16px;
+            &:hover {
+              opacity: 0.7;
+            }
           }
         }
         li:nth-of-type(1) {
@@ -212,7 +216,7 @@ export default {
 
   .nav_change {
     font-size: 14px;
-    font-family: NunitoSans-Regular;
+    // font-family: NunitoSans-Regular;
     font-weight: 400;
     color: rgba(89, 89, 89, 1);
     line-height: 19px;
@@ -228,6 +232,9 @@ export default {
         .el-input__inner {
           border: 1px solid #469fdb;
           color: #469fdb;
+          &:hover {
+            opacity: 0.7;
+          }
         }
         .el-select__caret {
           color: #469fdb;

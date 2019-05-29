@@ -1,8 +1,26 @@
 <template>
-  <div id="app">
+  <div id="app" :class="'lang_'+isLocal">
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+    }
+  },
+  mounted() {
+    console.log(this.$i18n.locale)
+  },
+  computed: {
+    isLocal() {
+      console.log(this.$store.state.Home.lang)
+      return this.$store.state.Home.lang
+    }
+  },
+}
+</script>
 
 <style lang="less">
 #app {
